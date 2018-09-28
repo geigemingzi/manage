@@ -7,8 +7,17 @@
     <title>测试</title>
 </head>
 <body>
-    
-    <script src="../api/find.js">
+    <div>
+        <input type="button" id='btn' value="测试">
+    </div>
+    <script src="../js/js.js">
+    </script>
+    <script>
+        btn.onclick = function(){
+            get("login?username=22&password=22", res => {
+               console.log(res)
+            })
+        }
     </script>
 </body>
 </html>

@@ -1,12 +1,12 @@
 const express = require('express');
 const bodyParser = require("body-parser");
 const app = express();
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({ extended: false }));
 //跨域请求
 app.all('*', function (req, res, next) {
     res.setHeader("Content-Type", "text/html;charset=utf-8");
     res.setHeader("Access-Control-Allow-Credentials", "true");
-    res.setHeader("Access-Control-Allow-Origin", "http://localhost:6688");
+    res.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:8080");
 
     next();
 })
@@ -17,10 +17,10 @@ const con = require('./modules/conn.js');
 // 后端的路由
 // 用户登录
 app.get('/login', function(req, res){
-    // var strname = req.query.username;
-    // var strpass = req.query.password;
-    var strname = "22";
-    var strpass = "22";
+    var strname = req.query.username;
+    var strpass = req.query.password;
+    // var strname = "22";
+    // var strpass = "22";
     con(function(database){
         var db = database.db('management');
         // 查询

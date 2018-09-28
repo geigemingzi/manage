@@ -3,7 +3,7 @@ var MongoClient = mongodb.MongoClient;
 var ObjectId = mongodb.ObjectID;
 
 //链接到数据库
-var url = "mongodb://localhost:27017/";
+var url = "mongodb://127.0.0.1:27017/";
 
 module.exports = function (callback) {
     //操作数据库的代码

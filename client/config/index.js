@@ -11,11 +11,11 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      // '/api': {
-      //   target: 'http://api.douban.com/v2/movie',
-      //   changeOrigin: true,
-      //   pathRewrite: { '^/api': '' }
-      // }
+      '/api': {
+        target: 'http://127.0.0.1:6688',
+        changeOrigin: true,
+        pathRewrite: { '^/api': '' }
+      }
     },
 
     // Various Dev Server settings
