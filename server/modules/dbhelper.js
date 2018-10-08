@@ -3,7 +3,7 @@ var mongodb = require("mongodb");
 var MongoClient = mongodb.MongoClient;
 var ObjectId = mongodb.ObjectID;
 //链接到数据库
-var url = "mongodb://localhost:27017/";
+var url = "mongodb://localhost:27017/management";
 
 // module.exports = function(callback){
 //     MongoClient.connect(url, function(err,database){
@@ -22,7 +22,7 @@ function _connectDB(callback) {
             callback(err, '链接失败');
             return;
         }
-        var db = db.db("management");
+        // var db = db.db("management");
         callback(err, db);
     });
 }
@@ -54,7 +54,7 @@ function _connectDB(callback) {
 //插入数据
 exports.insertOne = function (collectionName, json, callback) {
     _connectDB(function (err, db) {
-        var db = database.db("guangzhou1804");
+        // var db = database.db("guangzhou1804");
         db.collection(collectionName).insertOne(json, function (err, result) {
             callback(err, result);
             db.close(); //关闭数据库

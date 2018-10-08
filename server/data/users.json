@@ -1,0 +1,4 @@
+{"_id":{"$oid":"5bae1404d7662d46eecab68f"},"role":"超级管理员","username":"123","password":"123","gender":"男","phone":"13456789101","print":"","email":"3443242@qq.com","comment":"这里是备注信息"}
+{"_id":{"$oid":"5bae1536d7662d46eecab690"},"role":"管理员","username":"111","password":"111","gender":"男","phone":"13456789101","print":"","email":"3443242@qq.com","comment":"这里是备注信息"}
+{"_id":{"$oid":"5bae1542d7662d46eecab691"},"role":"管理员","username":"222","password":"222","gender":"男","phone":"13456789101","print":"","email":"3443242@qq.com","comment":"这里是备注信息"}
+{"_id":{"$oid":"5bae1572d7662d46eecab692"},"role":"超级管理员","username":"333","password":"333","gender":"男","phone":"13456789101","print":"","email":"3443242@qq.com","comment":"这里是备注信息"}

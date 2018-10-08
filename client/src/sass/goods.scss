@@ -1,0 +1,28 @@
+
+.headerbox{
+    padding:0 10px 30px;
+    .seek{
+        display:inline-block;
+        width: 300px;
+        height: 40px;
+    }
+    .add{
+        display:inline-block;
+        width: 300px;
+        height: 40px;
+    }
+}
+
+.goodstable{
+    width:100%;
+    text-align:center;/*文本居中*/
+    border-collapse:collapse; /*表格的边框合并，如果相邻，则共用一个边框*/
+    border-spacing:0;
+
+    border:1px solid #666;
+    td,th{
+        padding: 5px 0;
+        border-top:1px solid #666;
+        border-right:1px solid #666;
+    }
+}
